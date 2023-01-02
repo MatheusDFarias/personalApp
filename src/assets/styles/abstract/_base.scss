@@ -1,34 +1,30 @@
-body, main{
+
+html,body, main{
     
     padding: 0px;
     margin: 0px;
-    overflow: hidden;
     font-family: $fonte_family;
-
-
+    overflow: hidden;
 }
 
 .full{
     position: relative;
     height: 100vh;
     width: 100vw;
-    padding: 0;
-}
-
-.bg{
-    background-image: url(../fundo.svg) ;
+    padding: 0;    
+    background-image: url('../img/fundo.png');
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    background-repeat: no-repeat;
+    overflow-y: scroll;
 }
 
 
 .color-button{
         background-color: $cor_primaria; 
-        color: $cor_quartenaria;
-        border-color: $cor_quartenaria; 
+        color: $cor_secundaria;
+        border-color: $cor_secundaria; 
         &:hover{
-            background-color: $cor_quartenaria;
+            background-color: $cor_secundaria;
             border-color: $cor_primaria;  
             color: $cor_primaria;
         }

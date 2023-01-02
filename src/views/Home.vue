@@ -1,14 +1,22 @@
 <template>
-    <v-row class="full pa-0 ma-0" style="background:#000">
-        <Navbar></Navbar>          
-    </v-row>
-        
+    
+    <v-responsive class="full pa-0 ma-0">
+        <v-col cols="12" class="pa-0 ma-0">
+            <HeaderNav/>
+            <About/>
+            <Index/>
+        </v-col>
+    </v-responsive>
 </template>
 <script>
-import Navbar from '../components/menu/navbar.vue'
+import HeaderNav from '../components/header/index';
+import About from '../components/about/index';
+import Index from '../components/index/index';
 export default {
     components:{
-        Navbar
+        HeaderNav,
+        About,
+        Index
     }
 }
 </script>
