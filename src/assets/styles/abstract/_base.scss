@@ -1,46 +1,52 @@
-body, main{
-    
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
-    font-family: $fonte_family;
-
-
-}
-
-.full{
-    position: relative;
+body,main{
     height: 100vh;
-    width: 100vw;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $fonte_family;
+    background-color: $cor_primaria;
+    font-weight: 500;
+    font-size: 18px;
 }
 
-.bg{
-    background-image: url(../fundo.svg) ;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}
 
-
-.color-button{
-        background-color: $cor_primaria; 
-        color: $cor_quartenaria;
-        border-color: $cor_quartenaria; 
-        &:hover{
-            background-color: $cor_quartenaria;
-            border-color: $cor_primaria;  
-            color: $cor_primaria;
-        }
-}
-
-.color-primary{
-  color: $cor_mono_black; 
-}
-
-.color-secund{
+.text__color__primary{
   color: $cor_primaria; 
 }
+
+.text__color__secundary{
+  color: $cor_secundaria; 
+}
+
+.text__color__light{
+  color: $cor_mono_white;
+}
+
+.border__focus{
+  border: 3px $cor_terciaria solid;
+}
+
+.border__focus__secundary{
+  border: 3px $cor_secundaria solid;
+}
+
+.border__focus__radius{
+  border-radius: 30px;
+}
+
+.border__focus__inverse{
+  border: 3px $cor_primaria solid;
+}
+
+.border__focus__mono{
+  border: 3px $cor_mono_white solid;
+}
+
+.box__shadow{
+  box-shadow: 1px 12px #c6c6c6;
+}
+
+
 
 /*transitions components*/
 .slide-fade-enter-active {

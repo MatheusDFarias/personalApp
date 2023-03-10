@@ -1,0 +1,38 @@
+.about__margin{
+    align-items: center;
+    margin: 9%;
+  }
+
+.text__about__color{
+    color: $cor_mono_white;
+}
+
+.text__about__focus{
+    color: $cor_terciaria;
+}
+.text__about__focus__inverse{
+    color: $cor_primaria;
+}
+
+.text__about__focus__background{
+    background-color: $cor_terciaria;
+    padding: 3px 10px 3px 10px;
+    border-radius: 5px;
+    &:hover{
+        background-color: $cor_mono_white;
+        color: $cor_terciaria;   
+    }
+}
+
+.text-line{
+    line-height: 40px;
+}
+
+.btn__about{
+    color: $cor_mono_white;
+    &:hover{
+        color: $cor_primaria;
+        border-color: $cor_terciaria;
+        background-color: $cor_terciaria;
+    }
+}

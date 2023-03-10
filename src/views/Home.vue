@@ -1,14 +1,19 @@
 <template>
-    <v-row class="full pa-0 ma-0" style="background:#000">
-        <Navbar></Navbar>          
-    </v-row>
-        
+        <v-row>
+            <v-col cols="12">
+                <About/>
+            </v-col>
+        </v-row>
 </template>
 <script>
-import Navbar from '../components/menu/navbar.vue'
+import About from '../components/about/index';
+//import Knowledge from '../components/knowledge/index';
+//import Professional from '../components/professional/index';
 export default {
     components:{
-        Navbar
+        About,
+  //      Knowledge,
+  //      Professional
     }
 }
 </script>

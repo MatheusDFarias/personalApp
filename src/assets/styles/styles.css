@@ -2,44 +2,52 @@
 /* TAMANHO */
 /* FAMILIA */
 /* CORES SITE */
+/*CORES DAS FONTES*/
 body, main {
-  padding: 0px;
-  margin: 0px;
-  overflow: hidden;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.full {
-  position: relative;
   height: 100vh;
-  width: 100vw;
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubunto", sans-serif;
+  background-color: #363636;
+  font-weight: 500;
+  font-size: 18px;
 }
 
-.bg {
-  background-image: url(../fundo.svg);
-  background-size: cover;
-  width: 100%;
-  height: 100%;
+.text__color__primary {
+  color: #363636;
 }
 
-.color-button {
-  background-color: #008A5C;
+.text__color__secundary {
+  color: #dc2f2f;
+}
+
+.text__color__light {
   color: #fff;
-  border-color: #fff;
-}
-.color-button:hover {
-  background-color: #fff;
-  border-color: #008A5C;
-  color: #008A5C;
 }
 
-.color-primary {
-  color: #000;
+.border__focus {
+  border: 3px #ff894c solid;
 }
 
-.color-secund {
-  color: #008A5C;
+.border__focus__secundary {
+  border: 3px #dc2f2f solid;
+}
+
+.border__focus__radius {
+  border-radius: 30px;
+}
+
+.border__focus__inverse {
+  border: 3px #363636 solid;
+}
+
+.border__focus__mono {
+  border: 3px #fff solid;
+}
+
+.box__shadow {
+  box-shadow: 1px 12px #c6c6c6;
 }
 
 /*transitions components*/
@@ -104,4 +112,44 @@ body, main {
 .slide-left-leave-to {
   transform: translateX(-20px);
   opacity: 0;
+}
+
+.about__margin {
+  align-items: center;
+  margin: 9%;
+}
+
+.text__about__color {
+  color: #fff;
+}
+
+.text__about__focus {
+  color: #ff894c;
+}
+
+.text__about__focus__inverse {
+  color: #363636;
+}
+
+.text__about__focus__background {
+  background-color: #ff894c;
+  padding: 3px 10px 3px 10px;
+  border-radius: 5px;
+}
+.text__about__focus__background:hover {
+  background-color: #fff;
+  color: #ff894c;
+}
+
+.text-line {
+  line-height: 40px;
+}
+
+.btn__about {
+  color: #fff;
+}
+.btn__about:hover {
+  color: #363636;
+  border-color: #ff894c;
+  background-color: #ff894c;
 }/*# sourceMappingURL=styles.css.map */

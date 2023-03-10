@@ -1,27 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Login from '../views/Login.vue'
-import RecorevyPassword from '../views/RecoveryPassword.vue'
 import Home from '../views/Home.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'login',
-    component: Login,
-    meta: { transitionName: 'slide-left' }
-  },
-  
-  {
-    path: '/recovery-password',
-    name: 'recoveryPassword',
-    component: RecorevyPassword,
-    meta: { transitionName: 'slide-right' }
-  },
-
-  {
-    path: '/home',
     name: 'home',
-    component: Home
+    component: Home,
+    meta: { transitionName: 'slide-left' }
   },
 
 ]
