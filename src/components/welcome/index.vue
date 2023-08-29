@@ -1,8 +1,8 @@
 <template>
-    <v-row class="pa-12">
-        <v-col cols="12">
-            <v-row class="mb-6 px-6 py-0">
-                <v-col cols="7">
+    <v-row>
+        <v-col align="center" cols="12">
+            <v-row class="pa-6" align="center">
+                <v-col align="left">
                     <transition name="slide-left" appear>
                         <p class="text-h2 font-weight-bold text-primary">
                             Olá!!
@@ -19,7 +19,7 @@
                         </p>                           
                     </transition>             
                 </v-col>
-                <v-col cols="5" align-self="center">
+                <v-col align="right">
                     <v-row>
                         <v-col align="center">
                             <transition name="fade">
@@ -32,11 +32,10 @@
                             </transition>
                         </v-col>
                     </v-row>
-
                 </v-col>                
             </v-row>
-            <v-row justify="center">
-                <v-col cols="auto">
+            <v-row class="pa-6" justify="center">
+                <v-col align="center">
                     <v-btn color="secondary" variant="flat" icon="mdi-arrow-right" size="x-large"></v-btn>
                 </v-col>
             </v-row> 

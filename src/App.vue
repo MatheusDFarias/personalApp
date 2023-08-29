@@ -1,7 +1,8 @@
 <template>
 <v-responsive>
+  <v-sheet>
     <v-layout>
-        <v-app-bar color="transparent" class="pa-2" collapse :elevation="0">
+        <v-app-bar color="transparent" class="pa-4" collapse :elevation="0">
             <v-btn
               :variant="theme.global.current.value.dark?'tonal':'text'" 
               size="x-large"
@@ -20,6 +21,7 @@
           </v-container>
         </v-main>      
     </v-layout>
+  </v-sheet>
 </v-responsive>
 </template>
 

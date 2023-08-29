@@ -5,13 +5,13 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    redirect:'/about',
+    redirect:'/welcome',
     meta: { transitionName: 'slide-left' },
     children: [
       {
-        path: "/about",
-        name: "About",
-        component: () => import("@/components/about/index"),
+        path: "/welcome",
+        name: "Welcome",
+        component: () => import("@/components/welcome/index"),
       },
       {
         path: "/index",
