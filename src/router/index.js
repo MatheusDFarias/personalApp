@@ -1,12 +1,24 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home,
-    meta: { transitionName: 'slide-left' }
+    redirect:'/about',
+    meta: { transitionName: 'slide-left' },
+    children: [
+      {
+        path: "/about",
+        name: "About",
+        component: () => import("@/components/about/index"),
+      },
+      {
+        path: "/index",
+        name: "Index",
+        component: () => import("@/components/index/index"),
+      },      
+    ]
   },
 
 ]

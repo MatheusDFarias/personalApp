@@ -1,14 +1,13 @@
+html{
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
 body,main{
     height: 100vh;
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
     font-family: $fonte_family;
-    background-color: $cor_primaria;
-    font-weight: 500;
-    font-size: 18px;
 }
-
 
 .text__color__primary{
   color: $cor_primaria; 
